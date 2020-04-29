@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Cabin', sans-serif;
+}
+body {
+    background-color: #4f63d7;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+div#board {
+    background-color: #f1f1f1;
+    width: 500px;
+    padding: 20px;
+}
+div#pomodoro {
+    display: flex;
+    align-items: center;
+    padding: 30px 0;
+    justify-content: space-around;
+}
+div#timer {
+    width: 150px;
+    height: 150px;
+    background-color: #4f63d7;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-size: 20px;
+}
+div.controlButtons {
+    display: flex;
+}
+p#timeS, p#timeB {
+    width: 70px;
+    text-align: center;
+}
+p.title {
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+button.buttonT {
+    background-color: #4f63d7;
+    border: none;
+    width: 25px;
+    height: 25px;
+    color: #ffffff;
+    font-size: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+div#controls {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+div#controls button {
+    border: none;
+    cursor: pointer;
+    width: 30px;
+    background-color: transparent;
+}
+div#controls button img {
+    width: 30px;
+}
+.breakColor {
+    background-color: #50d890 !important;
+}
+div#completed {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+div.fullPomodoro {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #b6b6b6;
+}

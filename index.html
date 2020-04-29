@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Pomodoro</title>
+</head>
+<body>
+    <div id="board">
+        <p>Pomodoro</p>
+        <div id="pomodoro">
+            <div>
+                <div id="timer">25:00</div> <!-- Timer Clock -->
+                <div id="completed"></div>
+            </div>
+            <div id="buttons">
+                <p class="title">Session Time</p>
+                <div class="controlButtons">
+                    <button class="buttonT" id="downS">-</button>
+                    <p id="timeS">25</p> <!-- Timer Value -->
+                    <button class="buttonT" id="upS">+</button>
+                </div>
+                <br/>
+                <p class="title">Break Time</p>
+                <div class="controlButtons">
+                    <button class="buttonT" id="downB">-</button>
+                    <p id="timeB">5</p> <!-- Timer break -->
+                    <button class="buttonT" id="upB">+</button>
+                </div>
+                <div id="controls">
+                    <button id="play"><img src="./icons/play.svg" alt="play"></button>
+                    <button id="pause"><img src="./icons/pause.svg" alt="pause"></button>
+                    <button id="stop"><img src="./icons/stop.svg" alt="stop"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <audio id="initSound" src="./sounds/init.mp3"></audio>
+    <audio id="finishSound" src="./sounds/finish.mp3"></audio>
+    <audio id="stopSound" src="./sounds/stop.mp3"></audio>
+    <script src="./script.js"></script>
+</body>
+</html>
